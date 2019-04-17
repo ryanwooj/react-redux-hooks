@@ -4,11 +4,13 @@ import TodoListContainer from './containers/TodoListContainer';
 
 function App() {
   return (
-    <div>
+    // Use of React Fragment
+    <>
+    
     <TodoListContainer />
 
     <CounterContainer />
-    </div>
+    </>
   );
 }
 
