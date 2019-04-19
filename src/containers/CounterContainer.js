@@ -3,6 +3,7 @@ import {useSelector, useActions} from 'react-redux';
 import Counter from '../components/Counter';
 import {increment, decrement} from '../modules/counter';
 
+//The use of useSelector method and useActions.
 const CounterContainer = () => {
     const counter = useSelector(state => state.counter, []);
 
