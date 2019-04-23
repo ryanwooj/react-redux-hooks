@@ -1,5 +1,6 @@
 import React from 'react'
 
+//Counter function componenet
 const Counter = ({ onIncrease, onDecrease, number }) => {
   return (
     <div>
@@ -13,4 +14,3 @@ const Counter = ({ onIncrease, onDecrease, number }) => {
 }
 
 export default Counter
-
