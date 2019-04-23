@@ -9,9 +9,10 @@ const CounterContainer = () => {
     const counter = useSelector(state => state.counter, []);
     //올리고 내리고에 인크리먼트, 디크리먼트라는 액션을 사용한다. 아직 이해못함.
     const [onIncrease, onDecrease] = useActions([increment, decrement], []);
+
   return (
    <Counter number={counter} onIncrease={onIncrease} onDecrease={onDecrease} />
   )
 }
 
-export default CounterContainer
+export default CounterContainer;
