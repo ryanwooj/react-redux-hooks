@@ -11,6 +11,8 @@ const CounterContainer = () => {
     const [onIncrease, onDecrease] = useActions([increment, decrement], []);
 
   return (
+    //카운터에 값을 넘겨준다 ㅋㅋ
+    
    <Counter number={counter} onIncrease={onIncrease} onDecrease={onDecrease} />
   )
 }
