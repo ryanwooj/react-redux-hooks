@@ -2,7 +2,7 @@
 const INCREMENT = 'counter/INCREMENT';
 const DECREMENT = 'counter/DECREMENT';
 
-
+//리덕스 사용, 리듀서
 export const increment = () => ({type: INCREMENT});
 export const decrement = () => ({type: DECREMENT});
 
