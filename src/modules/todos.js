@@ -4,6 +4,7 @@ const INSERT = 'todos/INSERT';
 const TOGGLE_CHECK = 'todos/TOGGLE_CHECK';
 const REMOVE = 'todos/REMOVE';
 
+//Initial State
 let id = 0;
 
 export const changeInput = input => ({type: CHANGE_INPUT, payload: input})
