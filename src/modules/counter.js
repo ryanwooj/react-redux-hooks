@@ -8,6 +8,7 @@ export const decrement = () => ({type: DECREMENT});
 
 const initialState = 0;
 
+//리덕스 사용, 액션
 const counter = (state=initialState, action) => {
     switch(action.type) {
         case INCREMENT:
