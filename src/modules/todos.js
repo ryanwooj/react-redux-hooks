@@ -1,3 +1,4 @@
+//투두의 Type setting
 const CHANGE_INPUT = 'todos/CHANGE_INPUT';
 const INSERT = 'todos/INSERT';
 const TOGGLE_CHECK = 'todos/TOGGLE_CHECK';
