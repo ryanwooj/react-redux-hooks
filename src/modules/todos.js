@@ -9,6 +9,8 @@ let id = 0;
 
 //Change input action returns its input
 export const changeInput = input => ({type: CHANGE_INPUT, payload: input})
+
+//insert Action for Each text
 export const insert = text => ({
     type: INSERT,
     payload: {
