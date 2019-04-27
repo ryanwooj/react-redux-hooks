@@ -7,6 +7,7 @@ const REMOVE = 'todos/REMOVE';
 //Initial State
 let id = 0;
 
+//Change input action returns its input
 export const changeInput = input => ({type: CHANGE_INPUT, payload: input})
 export const insert = text => ({
     type: INSERT,
