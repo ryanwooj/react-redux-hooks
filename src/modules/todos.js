@@ -21,6 +21,8 @@ export const insert = text => ({
 
 //Insert Action for Toggle Check for Each input
 export const toggleCheck = id => ({type: TOGGLE_CHECK, payload: id});
+
+// Delete Action for Text
 export const remove = id => ({type: REMOVE, payload: id});
 
 const initialState = {
