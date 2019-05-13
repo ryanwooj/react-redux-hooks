@@ -25,6 +25,8 @@ export const toggleCheck = id => ({type: TOGGLE_CHECK, payload: id});
 // Delete Action for Text
 export const remove = id => ({type: REMOVE, payload: id});
 
+
+//Initial State Initialized
 const initialState = {
     input: '',
     todos: []
