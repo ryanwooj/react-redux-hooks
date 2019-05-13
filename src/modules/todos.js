@@ -32,6 +32,8 @@ const initialState = {
     todos: []
 }
 
+
+//Reducer for todos
 const todos = (state = initialState, action) => {
     switch(action.type) {
         case CHANGE_INPUT:
