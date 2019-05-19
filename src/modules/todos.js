@@ -32,7 +32,7 @@ const initialState = {
     todos: []
 }
 
-
+//일요일에 일하는게
 //Reducer for todos!
 const todos = (state = initialState, action) => {
   const {type, payload} = action;
