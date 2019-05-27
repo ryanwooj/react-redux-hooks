@@ -35,17 +35,18 @@ const initialState = {
 
 //Reducer for todos!
 const todos = (state = initialState, action) => {
-    switch(action.type) {
+  const {type, payload} = action;
+    switch(type) {
         case CHANGE_INPUT:
             return {
                 ...state,
-                input: action.payload
+                input: payload
             };
         case INSERT:
             return {
                 ...state,
                 todos: state.todos.concat({
-                    ...action.payload,
+                    ...payload,
                     done: false,
                 })
             };
@@ -53,14 +54,14 @@ const todos = (state = initialState, action) => {
             return {
                 ...state,
                 todos: state.todos.map(
-                    todo => todo.id === action.payload
+                    todo => todo.id === payload
                     ? {...todo, done: !todo.done} : todo
                 )
             };
         case REMOVE:
             return {
                 ...state,
-                todos: state.todos.filter(todo => todo.id !== action.payload)
+                todos: state.todos.filter(todo => todo.id !== payload)
             }
         default:
             return state;
